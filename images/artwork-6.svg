@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="900" viewBox="0 0 1100 900">
+  <defs>
+    <filter id="oil6" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.016" numOctaves="4" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="30"/>
+    </filter>
+    <linearGradient id="bg6" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c9d6dd"/>
+      <stop offset="0.5" stop-color="#e8d9c4"/>
+      <stop offset="1" stop-color="#a8b8ae"/>
+    </linearGradient>
+  </defs>
+  <rect width="1100" height="900" fill="url(#bg6)"/>
+  <g filter="url(#oil6)" opacity="0.9">
+    <circle cx="780" cy="240" r="150" fill="#f0d9a8"/>
+    <path d="M0 560 Q280 480 550 580 T1100 540 L1100 900 L0 900 Z" fill="#6d8579"/>
+    <path d="M0 660 Q300 590 620 670 T1100 640 L1100 900 L0 900 Z" fill="#456055"/>
+    <path d="M0 760 Q260 700 560 770 T1100 740 L1100 900 L0 900 Z" fill="#2c4238"/>
+    <ellipse cx="300" cy="300" rx="120" ry="90" fill="#e8e0d0" opacity="0.6"/>
+  </g>
+  <rect width="1100" height="900" fill="none" stroke="#000" stroke-opacity="0.12" stroke-width="26"/>
+</svg>

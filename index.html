@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="heroTitle">Original Oil Paintings</title>
+  <meta name="description" content="Original hand-painted oil paintings by an independent artist. One-of-a-kind works, shipped worldwide from China.">
+  <meta property="og:title" content="Original Oil Paintings">
+  <meta property="og:description" content="One-of-a-kind hand-painted oil paintings.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a href="#top" class="brand" id="brandName">Your Name</a>
+      <nav class="nav" id="mainNav">
+        <a href="#works" data-i18n="navWorks">Works</a>
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="lang-btn" id="langBtn" aria-label="Switch language">中文</button>
+        <button class="menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg">
+        <img src="images/artwork-2.svg" alt="" aria-hidden="true">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="wrap hero-inner">
+        <span class="hero-badge" data-i18n="heroBadge">Original oil paintings</span>
+        <h1 class="hero-title" data-i18n="heroTitle">Quiet moments, kept on canvas</h1>
+        <p class="hero-sub" data-i18n="heroSub">Every piece is a one-of-a-kind hand-painted original.</p>
+        <div class="hero-cta">
+          <a href="#works" class="btn btn-primary" data-i18n="heroCta">View works</a>
+          <a href="#about" class="btn btn-ghost" data-i18n="heroCta2">The artist</a>
+        </div>
+      </div>
+      <a href="#works" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <section class="section works" id="works">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="worksSub">Portfolio</p>
+          <h2 data-i18n="worksTitle">Selected works</h2>
+        </div>
+        <div class="filters" id="filters">
+          <button class="filter active" data-filter="all" data-i18n="filterAll">All</button>
+          <button class="filter" data-filter="abstract" data-i18n="filterAbstract">Abstract</button>
+          <button class="filter" data-filter="landscape" data-i18n="filterLandscape">Landscape</button>
+          <button class="filter" data-filter="stilllife" data-i18n="filterStilllife">Still life</button>
+          <button class="filter" data-filter="portrait" data-i18n="filterPortrait">Portrait</button>
+        </div>
+        <div class="gallery" id="gallery"></div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="wrap about-inner">
+        <div class="about-art">
+          <img src="images/artwork-3.svg" alt="Painting detail">
+        </div>
+        <div class="about-text">
+          <p class="eyebrow" data-i18n="aboutSub">About</p>
+          <h2 data-i18n="aboutTitle">About the artist</h2>
+          <p class="bio" id="bioText"></p>
+          <div class="about-meta">
+            <div><span class="meta-label" data-i18n="size">Based in</span><span id="locationText"></span></div>
+            <div><span class="meta-label">Medium</span><span>Oil on canvas</span></div>
+          </div>
+          <a href="#contact" class="link-arrow" data-i18n="navContact">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="wrap">
+        <div class="section-head center">
+          <p class="eyebrow" data-i18n="contactSub">Get in touch</p>
+          <h2 data-i18n="contactTitle">Enquiries</h2>
+          <p class="contact-lead" data-i18n="contactLead">Interested in a piece? Get in touch.</p>
+        </div>
+        <div class="contact-grid">
+          <form class="contact-form" id="contactForm">
+            <input type="text" id="fName" required>
+            <label for="fName" data-i18n="formName">Your name</label>
+            <input type="email" id="fEmail" required>
+            <label for="fEmail" data-i18n="formEmail">Email address</label>
+            <textarea id="fMessage" rows="5" required></textarea>
+            <label for="fMessage" data-i18n="formMessage">Your message</label>
+            <button type="submit" class="btn btn-primary" data-i18n="formSubmit">Send enquiry</button>
+            <p class="form-note" data-i18n="formNote"></p>
+          </form>
+          <aside class="contact-info">
+            <h3 data-i18n="shippingTitle">Shipping & payment</h3>
+            <p id="shippingText"></p>
+            <div class="info-block">
+              <span class="meta-label" data-i18n="directEmail">Email</span>
+              <a id="emailLink" href="mailto:your.email@example.com">your.email@example.com</a>
+            </div>
+            <div class="info-block" id="paypalBlock">
+              <span class="meta-label">PayPal</span>
+              <a id="paypalLink" href="#" target="_blank" rel="noopener" data-i18n="paypal">Pay with PayPal</a>
+              <small data-i18n="paypalNote"></small>
+            </div>
+            <div class="info-block" id="socialBlock"></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <div class="brand footer-brand" id="footerName">Your Name</div>
+        <p>&copy; <span id="year"></span> <span id="footerArtist"></span>. <span data-i18n="footerRights">All rights reserved</span>.</p>
+      </div>
+      <a href="#top" class="back-top" data-i18n="backTop">Back to top</a>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Artwork details" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel">
+      <button class="modal-close" data-close aria-label="Close">&times;</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

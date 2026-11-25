@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1100" viewBox="0 0 900 1100">
+  <defs>
+    <filter id="oil3" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="5" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="26"/>
+    </filter>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9e3dc"/>
+      <stop offset="1" stop-color="#8fae9b"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1100" fill="url(#bg3)"/>
+  <g filter="url(#oil3)" opacity="0.9">
+    <ellipse cx="450" cy="500" rx="300" ry="360" fill="#5c7f6a"/>
+    <ellipse cx="400" cy="420" rx="180" ry="220" fill="#87a892"/>
+    <path d="M250 300 Q450 200 650 300 Q700 520 450 760 Q200 520 250 300 Z" fill="#3d5c4b" opacity="0.85"/>
+    <circle cx="450" cy="430" r="90" fill="#e8e2c4" opacity="0.8"/>
+  </g>
+  <rect width="900" height="1100" fill="none" stroke="#000" stroke-opacity="0.12" stroke-width="28"/>
+</svg>
