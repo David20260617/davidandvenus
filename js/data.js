@@ -34,17 +34,17 @@ const SITE = {
 
 const ARTWORKS = [
   {
-    image: 'images/artwork-1.svg',
-    titleZh: '深海之光',
-    titleEn: 'Light in the Deep',
-    year: '2025',
+    image: 'images/peach.jpg',
+    titleZh: '树上的桃子',
+    titleEn: 'Peach on the tree',
+    year: '2021',
     medium: '布面油画 / Oil on canvas',
-    sizeCm: '70 × 90 cm',
-    sizeIn: '28 × 36 in',
+    sizeCm: '30 × 60 cm',
+    sizeIn: '11.81 × 23.62',
     price: 680,
-    category: 'abstract',
-    descZh: '厚涂的蓝色层层堆叠，像海面下透进来的第一束光。这幅画适合客厅或书房的主墙。',
-    descEn: 'Layers of impasto blue build toward a single shaft of light beneath the surface. Ideal as a statement piece in a living room or study.'
+    category: 'landscape',
+    descZh: '本幅取竖狭构图，桃枝自左上入画，深紫褐枝干斜贯画面中轴，分出疏密。桃实三两颗错落枝间，近者受光面施胭脂红，背光处转以淡黄月白，最下一颗红尤浓重，稳稳压住下半幅。桃叶狭长，向光处敷黄绿，背光处沉入墨绿，前后层叠，筋脉不事细描而以笔触写出。背景以暖赭色虚化铺陈，光斑斑驳，明暗相生，笔意松散而收放有度。全幅于写实中见写意，设色清丽温润，留住夏日午后的晴光。右下角署款，附 “2021.8” 纪年。',
+    descEn: 'Painted in a tall, narrow format, the picture opens with a peach branch entering from the upper left, its deep purple-brown limb cutting diagonally through the central axis and setting the spacing of the whole. A few peaches are set at intervals along the branch: the nearer fruit carries rouge red on its lit side, passing into pale yellow and moon white where the light falls away, while the lowest peach, deepest in tone, anchors the lower half of the canvas. The peach leaves are slender — yellow-green where the sun reaches them, sunk to a dark green in shadow — layered one behind another, their veins laid in with the brush rather than finely delineated. The background dissolves into a warm ochre ground, its dappled light and shadow answering one another, the handling loose yet restrained. Throughout, realism gives way to a painterly ease; the colour is clear and gently warm, holding the bright light of a summer afternoon. Signed lower right and dated "2021.8".'
   },
   {
     image: 'images/artwork-2.svg',
