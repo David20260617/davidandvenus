@@ -247,6 +247,19 @@
     for(var i=0;i<bin.length;i++)bytes[i]=bin.charCodeAt(i);
     return new TextDecoder().decode(bytes);
   }
+  // 从 data.js 源码里取出 ARTWORKS 数组。注意 new Function 返回的是包装对象，
+  // 必须取 .ARTWORKS 才是数组——直接把包装对象当数组会误判为“格式异常”。
+  function parseArtworks(src){
+    var obj;
+    try{
+      obj=new Function(src+'\nreturn {ARTWORKS:ARTWORKS};')();
+    }catch(e){
+      throw new Error('data.js 语法错误：'+e.message);
+    }
+    var arr=obj&&obj.ARTWORKS;
+    if(!Array.isArray(arr)) throw new Error('作品数据格式异常：ARTWORKS 不是数组');
+    return arr;
+  }
   function view(name){
     ['Setup','List','Edit'].forEach(function(v){$('view'+v).classList.toggle('active',v===name)});
     window.scrollTo(0,0);
@@ -341,10 +354,8 @@
     try{
       var f=await gh(repoPath('js/data.js'));
       srcText=fromB64(f.content);
-      var probe=new Function(srcText+'\nreturn {ARTWORKS:ARTWORKS};');
-      artworks=probe()||[];
+      artworks=parseArtworks(srcText);
       pendingImgs={};
-      if(!Array.isArray(artworks)) throw new Error('作品数据格式异常');
       hideStatus();
       return true;
     }catch(e){
@@ -563,7 +574,7 @@
       pendingImgs={};
       var f=await gh(repoPath('js/data.js'));
       srcText=fromB64(f.content);
-      artworks=new Function(srcText+'\nreturn {ARTWORKS:ARTWORKS};')();
+      artworks=parseArtworks(srcText);
       renderList();
       hideStatus();
       msg('list','发布成功！约 1–2 分钟后网站更新。','ok');
