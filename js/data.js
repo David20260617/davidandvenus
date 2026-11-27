@@ -74,17 +74,17 @@ const ARTWORKS = [
     descEn: 'A green-toned still life exploring the overlooked quiet moments in ordinary objects.'
   },
   {
-    image: 'images/artwork-4.svg',
-    titleZh: '城市构成',
-    titleEn: 'Urban Composition',
-    year: '2025',
+    image: 'images/backshadow.jpg',
+    titleZh: '入局',
+    titleEn: 'Into the Game',
+    year: '2019',
     medium: '布面油画 / Oil on canvas',
-    sizeCm: '90 × 70 cm',
-    sizeIn: '36 × 28 in',
+    sizeCm: '40 × 50 cm',
+    sizeIn: '15.7 × 19.7in',
     price: 650,
-    category: 'abstract',
-    descZh: '用几何色块拆解城市印象，红、金、灰的碰撞带有现代主义的克制。',
-    descEn: 'Geometric planes deconstruct an impression of the city, with a modernist restraint in red, gold and grey.'
+    category: 'portrait',
+    descZh: '画面以深蓝夜色为底，一位身着白色露背长裙的女子背对观者，缓步走向画面深处。左侧钢琴一角与几何墙面隐在暗处，几道斜光划过空间；白色裙身在冷调背景中格外醒目。背影不语，留下如棋局一般尚未揭晓的悬念。',
+    descEn: 'gainst a deep blue night, a woman in a white backless gown walks away into the scene; a piano corner and geometric walls linger in shadow as slanting light cuts across, her silent back leaving an unsolved riddle like a game of chess.'
   },
   {
     image: 'images/artwork-5.svg',
