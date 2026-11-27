@@ -83,14 +83,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .contact-lead { color: var(--ink-soft); margin-top: 16px; }
 .contact-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 70px; margin-top: 50px; }
-.contact-form { display: flex; flex-direction: column; position: relative; gap: 22px; }
+.contact-form { display: flex; flex-direction: column; gap: 20px; }
+.contact-form .field { display: flex; flex-direction: column; gap: 8px; }
 .contact-form input, .contact-form textarea { width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--line); padding: 10px 0; font-size: 15px; font-family: inherit; color: var(--ink); outline: none; resize: vertical; }
 .contact-form input:focus, .contact-form textarea:focus { border-color: var(--ink); }
-.contact-form label { position: absolute; font-size: 13px; color: var(--ink-soft); pointer-events: none; transition: all .2s; }
-.contact-form input:focus + label, .contact-form input:not(:placeholder-shown) + label,
-.contact-form textarea:focus + label, .contact-form textarea:not(:placeholder-shown) + label { transform: translateY(-20px); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); }
-.contact-form input, .contact-form textarea { margin-bottom: -10px; }
-.contact-form .btn { align-self: flex-start; margin-top: 10px; }
+.contact-form label { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+.contact-form .btn { align-self: flex-start; margin-top: 4px; }
 .form-note { font-size: 12px; color: var(--ink-soft); }
 .contact-info h3 { font-family: var(--serif); font-size: 28px; font-weight: 400; margin-bottom: 18px; }
 .contact-info > p { color: var(--ink-soft); font-size: 14px; margin-bottom: 30px; }
