@@ -100,17 +100,17 @@ const ARTWORKS = [
     descEn: 'A birds-eye view of Butchart Gardens: sweeping green lawns traced by winding white paths, rounded shrubs and tall cypresses dotted between bands of pink, red and pale-purple flowers, bright simplified forms capturing the lushness of spring.'
   },
   {
-    image: 'images/artwork-6.svg',
-    titleZh: '湖畔晨雾',
-    titleEn: 'Morning Mist on the Lake',
-    year: '2025',
+    image: 'images/shennongxi.jpg',
+    titleZh: '神农溪',
+    titleEn: 'Shennong Stream',
+    year: '2022',
     medium: '布面油画 / Oil on canvas',
-    sizeCm: '100 × 80 cm',
-    sizeIn: '40 × 32 in',
+    sizeCm: '60 × 90 cm',
+    sizeIn: '23.6 × 35.4 in',
     price: 780,
     category: 'landscape',
-    descZh: '横向铺开的水岸场景，冷绿与暖金过渡，适合挂在沙发上方。',
-    descEn: 'A panoramic waterscape shifting between cool greens and warm gold, made for the wall above a sofa.'
+    descZh: '前景一条青碧溪流穿山而来，卵石散落水中，几尾橙红游鱼点缀其间；两岸青山层叠，林木葱郁，白墙民居沿溪岸一字排开。远处峰峦没入云天，天光云影铺在山脊之上，写出神农架峡谷湿润、清幽而生机盎然的气息。',
+    descEn: 'A turquoise stream winds out of the mountains into the foreground, pebbles scattered in the water and a few orange-red fish darting among them; layered green hills rise on both banks with white houses along the shore, distant peaks fading into a cloudy sky, capturing the moist, serene vitality of the Shennongjia valley.'
   }
 ];
 
