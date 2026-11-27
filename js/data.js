@@ -36,8 +36,8 @@ const SITE = {
 const ARTWORKS = [
   {
     image: 'images/peach.jpg',
-    titleZh: '树上的桃子',
-    titleEn: 'Peach on the tree',
+    titleZh: '红晕初绽',
+    titleEn: 'First Blush',
     year: '2021',
     medium: '布面油画 / Oil on canvas',
     sizeCm: '30 × 60 cm',
