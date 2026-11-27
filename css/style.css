@@ -62,10 +62,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px 22px; }
 .card { cursor: pointer; }
 .card-hidden { display: none; }
-.card-img { position: relative; overflow: hidden; background: var(--paper-2); aspect-ratio: 4/5; }
-.card:nth-child(3n+2) .card-img { aspect-ratio: 5/4; }
-.card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s cubic-bezier(.2,.7,.3,1); }
-.card:hover .card-img img { transform: scale(1.05); }
+/* 正方形占位固定；图片等比缩放居中，留白用背景色填充。换任何尺寸的画都不影响布局 */
+.card-img { position: relative; overflow: hidden; background: var(--paper-2); aspect-ratio: 1/1; }
+.card-img img { width: 100%; height: 100%; object-fit: contain; transition: filter .3s; }
+.card:hover .card-img img { filter: brightness(1.05); }
 .card-info { padding-top: 14px; display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
 .card-title { font-family: var(--serif); font-size: 22px; }
 .card-price { font-size: 13px; color: var(--ink-soft); white-space: nowrap; }
@@ -111,8 +111,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .modal-panel { position: relative; background: var(--paper); width: min(1000px, 96vw); max-height: 92vh; overflow-y: auto; }
 .modal-close { position: absolute; top: 14px; right: 18px; font-size: 34px; line-height: 1; z-index: 2; color: var(--ink); }
 .modal-body { display: grid; grid-template-columns: 1.1fr .9fr; }
-.modal-image { background: var(--paper-2); }
-.modal-image img { width: 100%; height: 100%; object-fit: cover; min-height: 480px; }
+.modal-image { background: var(--paper-2); display: flex; align-items: center; justify-content: center; }
+.modal-image img { width: 100%; height: 100%; max-height: 80vh; object-fit: contain; }
 .modal-detail { padding: 60px 46px; display: flex; flex-direction: column; }
 .modal-detail h3 { font-family: var(--serif); font-size: 42px; font-weight: 400; line-height: 1.1; margin-bottom: 8px; }
 .modal-detail .modal-year { color: var(--accent); font-size: 13px; letter-spacing: .1em; margin-bottom: 24px; }
@@ -129,13 +129,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .gallery { grid-template-columns: repeat(2, 1fr); }
   .about-inner, .contact-grid { grid-template-columns: 1fr; gap: 50px; }
   .modal-body { grid-template-columns: 1fr; }
-  .modal-image img { min-height: 300px; max-height: 45vh; }
+  .modal-image img { max-height: 60vh; }
   .modal-detail { padding: 36px 28px; }
 }
 @media (max-width: 560px) {
   .section { padding: 70px 0; }
   .gallery { grid-template-columns: 1fr; gap: 32px; }
-  .card:nth-child(3n+2) .card-img { aspect-ratio: 4/5; }
   .hero-title { font-size: 46px; }
   .about-meta { gap: 30px; }
   .footer-inner { flex-direction: column; align-items: flex-start; }
