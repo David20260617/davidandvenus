@@ -57,7 +57,7 @@ const ARTWORKS = [
     sizeIn: '11.8 × 15.7 in',
     price: 720,
     category: 'abstract',
-    descZh: '画面以白色线条将布面分割为大小不一的几何块面，每一块内都作柔和的色彩过渡：粉紫、青绿、赭黄、黛蓝在白底上错落并置，冷暖相衬。这是一次调色的入门练习 —— 记录初学之时对色相、明度与冷暖关系的试探；细碎的色块彼此呼应，仿佛把一束光拆分成不同的颜色，也把初学作画的时光一并拾捡进画面。',
+    descZh: '画面以白色线条将布面分割为大小不一的几何块面，每一块内都作柔和的色彩过渡：粉紫、青绿、赭黄、黛蓝在白底上错落并置，冷暖相衬。这是对色相、明度与冷暖关系的试探；细碎的色块彼此呼应，仿佛把一束光拆分成不同的颜色，也把初学作画的时光一并拾捡进画面。',
     descEn: 'White lines divide the canvas into soft-gradient patches of pink-purple, blue-green, ochre and indigo — an early study of hue, value and temperature, gathering the first moments of learning to paint.'
   },
   {
