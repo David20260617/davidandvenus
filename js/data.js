@@ -9,8 +9,8 @@
    medium     材质，如 "布面油画 / Oil on canvas"
    sizeCm     厘米尺寸，如 "60 × 80 cm"
    sizeIn     英寸尺寸，如 "24 × 32 in"
-   ratio      可选：画面宽高比，如 "30 / 60"（宽30高60）。填了就按真实比例完整显示、不裁切；不填则默认 4:5
    price      标价（美元数字），留空则不显示价格
+   （图片显示：占位固定为正方形，图片按自身比例等比缩放居中，留白填背景色，无需任何配置）
    category   分类：abstract / landscape / stilllife / portrait
    descZh     中文介绍（一两句话讲灵感或故事）
    descEn     英文介绍
@@ -36,8 +36,8 @@ const SITE = {
 const ARTWORKS = [
   {
     image: 'images/peach.jpg',
-    titleZh: '红晕初绽',
-    titleEn: 'First Blush',
+    titleZh: '树上的桃子',
+    titleEn: 'Peach on the tree',
     year: '2021',
     medium: '布面油画 / Oil on canvas',
     sizeCm: '30 × 60 cm',
@@ -46,6 +46,19 @@ const ARTWORKS = [
     category: 'landscape',
     descZh: '本幅取竖狭构图，桃枝自左上入画，深紫褐枝干斜贯画面中轴，分出疏密。桃实三两颗错落枝间，近者受光面施胭脂红，背光处转以淡黄月白，最下一颗红尤浓重，稳稳压住下半幅。桃叶狭长，向光处敷黄绿，背光处沉入墨绿，前后层叠，筋脉不事细描而以笔触写出。背景以暖赭色虚化铺陈，光斑斑驳，明暗相生，笔意松散而收放有度。全幅于写实中见写意，设色清丽温润，留住夏日午后的晴光。右下角署款，附 “2021.8” 纪年。',
     descEn: 'Painted in a tall, narrow format, the picture opens with a peach branch entering from the upper left, its deep purple-brown limb cutting diagonally through the central axis and setting the spacing of the whole. A few peaches are set at intervals along the branch: the nearer fruit carries rouge red on its lit side, passing into pale yellow and moon white where the light falls away, while the lowest peach, deepest in tone, anchors the lower half of the canvas. The peach leaves are slender — yellow-green where the sun reaches them, sunk to a dark green in shadow — layered one behind another, their veins laid in with the brush rather than finely delineated. The background dissolves into a warm ochre ground, its dappled light and shadow answering one another, the handling loose yet restrained. Throughout, realism gives way to a painterly ease; the colour is clear and gently warm, holding the bright light of a summer afternoon. Signed lower right and dated "2021.8".'
+  },
+  {
+    image: 'images/artwork-2.svg',
+    titleZh: '秋日庭院',
+    titleEn: 'Autumn Courtyard',
+    year: '2025',
+    medium: '布面油画 / Oil on canvas',
+    sizeCm: '80 × 100 cm',
+    sizeIn: '32 × 40 in',
+    price: 720,
+    category: 'landscape',
+    descZh: '暖橙与赭石交织，记录一个安静的秋日午后。可见的笔触让画面在光下有不同的层次。',
+    descEn: 'Warm ochres and burnt orange capture a quiet autumn afternoon. Visible brushwork reveals new depth as the light changes.'
   },
   {
     image: 'images/artwork-3.svg',
