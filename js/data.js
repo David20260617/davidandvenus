@@ -87,17 +87,17 @@ const ARTWORKS = [
     descEn: 'gainst a deep blue night, a woman in a white backless gown walks away into the scene; a piano corner and geometric walls linger in shadow as slanting light cuts across, her silent back leaving an unsolved riddle like a game of chess.'
   },
   {
-    image: 'images/artwork-5.svg',
-    titleZh: '余晖',
-    titleEn: 'Afterglow',
+    image: 'images/butchart.jpg',
+    titleZh: '宝翠之春',
+    titleEn: 'Spring Paths in Butchart Gardens',
     year: '2024',
     medium: '布面油画 / Oil on canvas',
-    sizeCm: '70 × 90 cm',
-    sizeIn: '28 × 36 in',
+    sizeCm: '50 × 40 cm',
+    sizeIn: '19.7 × 15.7 in',
     price: 620,
-    category: 'portrait',
-    descZh: '柔和的粉调记录光线消逝前的最后一刻，情绪安静而私人。',
-    descEn: 'Soft pink tones hold the last moment before the light fades — quiet and deeply personal.'
+    category: 'landscape',
+    descZh: '画面以俯瞰视角展开宝翠花园：大片浓绿草坪之间，白色小径蜿蜒曲折，圆整的灌木与高耸的柏树错落点缀，粉、红、淡紫的花带沿路铺开。色块明快、轮廓概括，把园林的层次与春日的葱郁收入一帧，如从高处望去的一段闲庭信步。',
+    descEn: 'A birds-eye view of Butchart Gardens: sweeping green lawns traced by winding white paths, rounded shrubs and tall cypresses dotted between bands of pink, red and pale-purple flowers, bright simplified forms capturing the lushness of spring.'
   },
   {
     image: 'images/artwork-6.svg',
