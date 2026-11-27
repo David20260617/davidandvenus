@@ -61,16 +61,16 @@ const ARTWORKS = [
     descEn: 'White lines divide the canvas into soft-gradient patches of pink-purple, blue-green, ochre and indigo — an early study of hue, value and temperature, gathering the first moments of learning to paint.'
   },
   {
-    image: 'images/artwork-3.svg',
-    titleZh: '静谧生长',
-    titleEn: 'Quiet Growth',
-    year: '2024',
+    image: 'images/rose.jpg',
+    titleZh: '独芳',
+    titleEn: 'A Single Crimson Rose',
+    year: '2022',
     medium: '布面油画 / Oil on canvas',
-    sizeCm: '60 × 80 cm',
-    sizeIn: '24 × 32 in',
+    sizeCm: '30 × 30 cm',
+    sizeIn: '11.8 × 11.8 in',
     price: 580,
     category: 'stilllife',
-    descZh: '以绿色为主的静物，探讨日常物件里被忽略的安静时刻。',
+    descZh: '方形画幅中，一枝半开的玫瑰斜出画面，深红花瓣层层翻卷，花心透出粉白。身后的绿叶与光斑被处理成朦胧虚化的背景，红绿相衬，视线自然收拢于花朵本身。笔触含蓄，光影柔和，写一枝独自绽放的沉静，与藏在花瓣里的热烈。',
     descEn: 'A green-toned still life exploring the overlooked quiet moments in ordinary objects.'
   },
   {
