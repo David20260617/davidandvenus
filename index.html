@@ -12,6 +12,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* 艺术家简介区的静态标签双语切换：只依赖 html[lang]，改 index.html 一个文件即可生效 */
+    html[lang="zh"] .i18n-en, html[lang="en"] .i18n-zh { display: none; }
+  </style>
 </head>
 <body>
   <header class="site-header" id="top">
@@ -74,8 +78,8 @@
           <h2 data-i18n="aboutTitle">About the artist</h2>
           <p class="bio" id="bioText"></p>
           <div class="about-meta">
-           <div><span class="meta-label" data-i18n="basedIn">Based in</span><span id="locationText"></span></div>
-           <div><span class="meta-label" data-i18n="medium">Medium</span><span>Oil on canvas</span></div>
+            <div><span class="meta-label"><span class="i18n-zh">所在地</span><span class="i18n-en">Based in</span></span><span id="locationText"></span></div>
+            <div><span class="meta-label"><span class="i18n-zh">材质</span><span class="i18n-en">Medium</span></span><span class="i18n-zh">布面油画</span><span class="i18n-en">Oil on canvas</span></div>
           </div>
           <a href="#contact" class="link-arrow" data-i18n="navContact">Contact</a>
         </div>
@@ -91,12 +95,18 @@
         </div>
         <div class="contact-grid">
           <form class="contact-form" id="contactForm">
-            <input type="text" id="fName" required>
-            <label for="fName" data-i18n="formName">Your name</label>
-            <input type="email" id="fEmail" required>
-            <label for="fEmail" data-i18n="formEmail">Email address</label>
-            <textarea id="fMessage" rows="5" required></textarea>
-            <label for="fMessage" data-i18n="formMessage">Your message</label>
+            <div class="field">
+              <label for="fName" data-i18n="formName">Your name</label>
+              <input type="text" id="fName" required>
+            </div>
+            <div class="field">
+              <label for="fEmail" data-i18n="formEmail">Email address</label>
+              <input type="email" id="fEmail" required>
+            </div>
+            <div class="field">
+              <label for="fMessage" data-i18n="formMessage">Your message</label>
+              <textarea id="fMessage" rows="5" required></textarea>
+            </div>
             <button type="submit" class="btn btn-primary" data-i18n="formSubmit">Send enquiry</button>
             <p class="form-note" data-i18n="formNote"></p>
           </form>
