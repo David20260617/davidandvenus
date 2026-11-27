@@ -131,7 +131,7 @@ const I18N = {
     paypal: '通过 PayPal 付款', paypalNote: '（付款前请先邮件确认作品与运费）',
     currency: '美元', inquire: '咨询这幅作品', viewDetails: '查看详情',
     footerRights: '保留所有权利', backTop: '回到顶部',
-    size: '尺寸', year: '年份', medium: '材质', price: '价格', priced: '价格面议',
+    basedIn: '所在地',size: '尺寸', year: '年份', medium: '材质', price: '价格', priced: '价格面议',
     close: '关闭'
   },
   en: {
@@ -150,7 +150,7 @@ const I18N = {
     paypal: 'Pay with PayPal', paypalNote: '(confirm the work and shipping with me by email first)',
     currency: 'USD', inquire: 'Enquire about this work', viewDetails: 'View details',
     footerRights: 'All rights reserved', backTop: 'Back to top',
-    size: 'Size', year: 'Year', medium: 'Medium', price: 'Price', priced: 'Price on request',
+    basedIn: 'Based in',size: 'Size', year: 'Year', medium: 'Medium', price: 'Price', priced: 'Price on request',
     close: 'Close'
   }
 };
