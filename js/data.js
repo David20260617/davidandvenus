@@ -58,7 +58,7 @@ const ARTWORKS = [
     price: 720,
     category: 'abstract',
     descZh: '画面以白色线条将布面分割为大小不一的几何块面，每一块内都作柔和的色彩过渡：粉紫、青绿、赭黄、黛蓝在白底上错落并置，冷暖相衬。这是一次调色的入门练习 —— 记录初学之时对色相、明度与冷暖关系的试探；细碎的色块彼此呼应，仿佛把一束光拆分成不同的颜色，也把初学作画的时光一并拾捡进画面。',
-    descEn: 'White lines divide the canvas into irregular geometric patches, each filled with a soft tonal gradient. Pinkish purple, blue-green, ochre yellow and deep indigo sit side by side against the white ground, warm tones balancing cool ones. The piece is an early colour-mixing study, recording the painter's first experiments with hue, value and temperature. The scattered patches echo one another as if a single beam of light had been broken into separate colours, gathering the first moments of learning to paint into the canvas.'
+    descEn: 'White lines divide the canvas into soft-gradient patches of pink-purple, blue-green, ochre and indigo — an early study of hue, value and temperature, gathering the first moments of learning to paint.'
   },
   {
     image: 'images/artwork-3.svg',
